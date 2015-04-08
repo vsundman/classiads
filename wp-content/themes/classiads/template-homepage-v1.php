@@ -1224,7 +1224,7 @@ get_header(); ?>
 	?>
 
 	<?php if($home_callout_disable == 1) { ?>
-	<div class="container ">
+	<div class="container shorter ">
 		<div class="callout clearfix">
 		<?php
 			$calloutTitle= ''; 
@@ -1264,42 +1264,7 @@ get_header(); ?>
 	?>
 
 	<?php if($home_location_disable == 1) { ?>
-	<section id="locations">
-	<div class="container">
-		<h2 class="main-title"><?php _e( 'AD LOCATIONS', 'agrg' ); ?></h2>
-			<div class="h2-seprator"></div>
-		<div class="location clearfix">
-		<?php
-			$locationTemplate = $wpdb->get_results("SELECT `post_id` FROM $wpdb->postmeta WHERE `meta_key` ='_wp_page_template' AND `meta_value` = 'template-locations.php' ", ARRAY_A);
-			$locationTemplatePermalink = get_permalink($locationTemplate[0]['post_id']);
-			global $wp_rewrite;
-			if ($wp_rewrite->permalink_structure == ''){
-			//we are using ?page_id
-			$locationURL = $locationTemplatePermalink."&location=";
-			}else{
-			//we are using permalinks
-			$locationURL = $locationTemplatePermalink."?location=";
-			}
-			$args_location = array( 'posts_per_page' => -1 );
-			$lastposts = get_posts( $args_location );
-
-			$all_post_location = array();
-			foreach( $lastposts as $post ) {
-			$all_post_location[] = get_post_meta( $post->ID, 'post_location', true );
-			}
-
-			$directors = array_unique($all_post_location);
-			foreach ($directors as $director) {
-				if(!empty($director)){
-			?>
-			<div class="span2">
-			<a href="<?php echo $locationURL; ?><?php echo $director; ?>"><i class="fa fa-map-marker"></i><?php echo $director; ?></a>
-			</div>
-			<?php }} ?>
-		<?php wp_reset_query(); ?>
-		</div>
-		</div>
-	</section>
+	
 	<?php } ?>
 	<?php
 	global $wp_rewrite;

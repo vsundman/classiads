@@ -14,6 +14,12 @@ Template: Classiads
 html .container{
 	width: 100%;
 }
+.home #featured-abs{
+	display: none;
+}
+.home #featured-abs::before{
+	display: none;
+}
 #register-login-block-top a{
 	font-family: "bebas-neue";
 }
@@ -110,4 +116,232 @@ header#navbar .main_menu{
 #navbar .main_menu > ul > li.current-menu-item > a, blockquote, #navbar .main_menu ul li ul.children li:first-child, #navbar .main_menu ul li ul.sub-menu li:first-child, .tagcloud a:hover, .ad-box:hover .post-title-cat, #navbar .main_menu > ul > li > a:hover, #register-login-block-top .login a:hover, .pagination span.current, .pagination a:hover, #carousel-prev:hover, #carousel-next:hover, #advanced-search-widget-version2 .views-exposed-widget .btn-primary:hover{
 	border-color: transparent;
 	color: #f6a52a;
+}
+/*SEARCH WIDGET*/
+div.search-bar #advanced-search-widget-version2{
+	bottom: 0px;
+}
+/*MAIN TITLE*/
+div.container h2.main-title,
+section h2.main-title{
+	font-family: "bebas-neue";
+	font-size: 45.25px;
+	color: #000;
+	text-align: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	font-weight: normal;
+}
+div.container .h2-seprator,
+section .h2-seprator{
+	background-color: transparent !important;
+}
+#categories-homepage div.container .full{
+	margin-top: 0;
+}
+div.full .category-box.first{
+	margin-left: 27px !important;
+}
+div.shorter{
+	width: 82%;
+}
+section h2.main-title{
+	text-align: center;
+}
+section#ads-homepage .h2-seprator{
+	margin: 0;
+}
+.ad-detail-half-box .ad-detail-info, span.ad-page-price, object, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, dl, dt, dd, fieldset, table, canvas, figure, figcaption, header, hgroup, menu, nav, output, h4, h4 a, h4 span{
+	font-family: "bebas-neue" !important;
+	font-size: 27px !important;
+	font-weight: normal !important;
+}
+.my-ad-details span a:hover, .my-ad-details span.my-ad-a:hover i, .my-ad-details a.my-ad-title:hover, .my-ad-details span a:hover, .main_menu > ul > li.current-menu-item > a, body.category .custom-widget .cat-widget-content li:hover span, body.category .custom-widget .cat-widget-content ul li:hover a, .custom-cat-widget .custom-widget .cat-widget-content li:hover span, .custom-cat-widget .custom-widget .cat-widget-content ul li:hover a, .marker-info-price, .author-avatar-edit-post .button-ag span.button-inner, .ad-title .ad-page-price a, .ad-page-price, .site-info a, .author-btn .button-ag span, .ads-tags a:hover, #ads-homepage ul.tabs li a:hover, #ads-homepage ul.tabs li a.current, .category-content li:hover a, .category-content li:hover span, .ad-box .add-price, .geo-location-button .on .fa, .geo-location-button .fa:hover, .publish-ad-button.login-page p a, a:hover, a:active, .main_menu > ul > li:hover > a, .main_menu .menu li.current_page_item > a, .main_menu .menu li.current-menu-item > a, .main_menu ul li ul.children li:hover a, .main_menu ul li ul.sub-menu li:hover a, footer h4{
+		color: #f6a52a !important;
+}
+footer div.container .full .first .block-content ul li.cat-item a{
+			font-family: "news-gothic-std"!important;
+}
+footer .full > .span3{
+	margin-left: 50px !important;
+}
+div.ad-box.first{
+	margin-left: 30px !important;
+}
+div.site-info{
+	font-family: "bebas-neue";
+	font-weight: normal;
+	color: #f6a52a;
+	font-size: 22.25px;
+	margin-left: 15px;
+}
+div.container .backtop{
+bottom: 142px;
+}
+.ads-main-page div.about{
+	width:85%;
+}
+.ads-main-page .about p{
+	line-height: 34px;
+	font-size: 18px;
+	font-family: 'news-gothic-std';
+	color: #000;
+}
+.page-template-template-about-php .ad-title{
+	text-align: left;
+	background-color: transparent;
+	margin-bottom: 20px;
+	padding: 0;
+	border-bottom: 1px solid #ebebeb;
+}
+.page-template-template-about-php .ad-title h2{
+	font-family: 'bebas-neue';
+	font-size: 32px;
+	font-weight: normal !important;
+	color: #000;
+	margin-left: 125px;
+}
+/*CATEGORIES PAGE*/
+.page-template-template-all-categories .ad-title{
+	display: none;
+}
+.page #featured-abs{
+	background-color: transparent;
+}
+.page #featured-abs::before{
+	content: "Latest Ads";
+	font-size: 33.25px;
+	font-weight: normal;
+	font-family: "bebas-neue";
+	margin-left: 25px;
+	color: #000;
+}
+/*pricing plans page*/
+.fullwidth .first{
+	width: 100%;
+	margin: 0 auto;
+}
+.fullwidth h3.title{
+	font-size: 54.25px;
+	color: #000;
+	font-family: "bebas-neue";
+	font-weight: normal;
+	margin-left: 25px;
+	padding-top: 30px;
+}
+.fullwidth .view-pricing-plans .product-wrapper{
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+	float: none;
+}
+.fullwidth .view-pricing-plans .span8.first{
+	border:none;
+	box-shadow: none;
+	width: 100% !important;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+}
+.fullwidth .view-pricing-plans .product-wrapper .span4{
+	width: 30% !important;
+	margin-left: 0px !important;
+	margin-right: 0px;
+	display: inline-block;
+
+}
+.fullwidth .view-pricing-plans .product-wrapper .span4.plan-last{
+	width: 30% !important;
+	padding-left: 50px;
+}
+.fullwidth .view-pricing-plans .product-wrapper .product-description{
+	margin-bottom: 0;
+}
+/*FAQ's page*/
+.page .ad-title{
+	background-color: transparent;
+	margin-bottom: 0px;
+}
+.page .ad-title h2{
+	font-weight: normal !important;
+	font-family: "bebas-neue";
+	text-align: left;
+	color: #000;
+	font-size: 52px !important;
+	margin-left: 60px;
+
+}
+.page section.ads-main-page{
+	width: 82%;
+	margin: 0 auto;
+}
+.page .ads-main-page .span8{
+	padding: 0 !important;
+	margin-bottom: 70px;
+}
+.page .ads-main-page .span8 .toggle{
+	margin-bottom: 25px;
+}
+.page .toggle .trigger i{
+	color: #000;
+}
+.page .toggle .trigger{
+	color: #222;
+}
+.page .togglebox p{
+	color: #000;
+	font-size: 18px;
+	line-height: 30px;
+}
+.page .container > .span4{
+	margin-left: 80px !important;
+}
+/*CONTACT PAGE*/
+.page-template-template-contact .ad-title + .container,
+.page-template-template-contact .ad-title h2{
+	width: 82%;
+	margin: 0 auto;
+}
+.page-template-template-contact .ad-title h2{
+	padding: 20px 0;
+}
+.page-template-template-contact section.ads-main-page{
+	width: 100%;
+}
+.page-template-template-contact  #featured-abs{
+	display: none;
+}
+.page-template-template-contact  #featured-abs::before{
+	display: none;
+}
+
+
+.cat-widget .cat-widget-title h3{
+	font-size: 26.25px;
+	font-family: "bebas-neue";
+	font-weight: normal;
+	padding: 0;
+
+}
+.cat-widget .cat-widget-title{
+		border-bottom: 2px solid #f6a52a;
+}
+.page .cat-widget .h3-seprator-sidebar{
+	display: none;
+}
+.page .cat-widget{
+	border: none;
+	box-shadow: none;
+}
+.page-template-template-contact-php #contact-form p{
+	width: 82% !important;
+	font-size: 18px !important;
+}
+form input[type='submit']:hover{
+	background-color: #000  !important;
+}
+.full h5{
+	color: #F00;
+	line-height: 20px;
+	font-size: 20px;
 }
